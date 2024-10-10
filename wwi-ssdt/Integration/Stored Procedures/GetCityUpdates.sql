@@ -32,7 +32,7 @@ BEGIN
     DECLARE @CityID int;
     DECLARE @ValidFrom datetime2(7);
 
-    -- first need to find any country changes that have occurred since initial load
+    -- first need to find any country changes that have occurred since initial load.
 
     DECLARE CountryChangeList CURSOR FAST_FORWARD READ_ONLY
     FOR

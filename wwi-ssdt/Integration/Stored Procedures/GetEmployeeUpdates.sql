@@ -67,7 +67,7 @@ BEGIN
     CREATE INDEX IX_EmployeeChanges ON #EmployeeChanges ([WWI Employee ID], [Valid From]);
 
     -- work out the [Valid To] value by taking the [Valid From] of any row that's for the same entry but later
-    -- otherwise take the end of time
+    -- otherwise take the end of time.
 
     UPDATE cc
     SET [Valid To] = COALESCE((SELECT MIN([Valid From]) FROM #EmployeeChanges AS cc2

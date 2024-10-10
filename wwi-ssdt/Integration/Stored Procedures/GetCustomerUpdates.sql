@@ -29,7 +29,7 @@ BEGIN
     DECLARE @CustomerID int;
     DECLARE @ValidFrom datetime2(7);
 
-    -- first need to find any buying group changes that have occurred since initial load
+    -- first need to find any buying group changes that have occurred since initial load.
 
     DECLARE BuyingGroupChangeList CURSOR FAST_FORWARD READ_ONLY
     FOR
